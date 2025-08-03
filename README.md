@@ -27,3 +27,17 @@ This is a front-end-only clone of Instagram, built using React. It simulates bas
 1. Clone the repository:
    ```bash
    git clone https://github.com/yadav09anil/instagram-clone-frontend.git
+   ```
+
+ ## 📸 Screenshots
+
+Below are some screenshots of Instagram Clone website:
+
+### 🏠 Loginn Page
+![Login Page](Images/Login.png)
+
+### 🎮 Home
+![Home Page](Images/Home.png)
+
+### 🎮 Profile Page 
+![Profile Page](Images/Profile.png)
