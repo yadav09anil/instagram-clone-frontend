@@ -1,12 +1,29 @@
-# React + Vite
+# Instagram Clone Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a front-end-only clone of Instagram, built using React. It simulates basic Instagram features like login, profile view, stories, and posts.
 
-Currently, two official plugins are available:
+## 🔐 Login Credentials
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Username:** `user`
+- **Password:** `12345678`
 
-## Expanding the ESLint configuration
+> These are default credentials set for demo purposes only.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- Login page with default credentials
+- Home page with posts and stories
+- Profile section (static)
+- Fully responsive UI
+
+## 🛠️ Tech Stack
+
+- React
+- CSS 
+- JSX
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yadav09anil/instagram-clone-frontend.git
