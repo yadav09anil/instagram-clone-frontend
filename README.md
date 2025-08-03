@@ -33,11 +33,11 @@ This is a front-end-only clone of Instagram, built using React. It simulates bas
 
 Below are some screenshots of Instagram Clone website:
 
-### 🏠 Loginn Page
+###  Loginn Page
 ![Login Page](Images/Login.png)
 
-### 🎮 Home
+###  Home
 ![Home Page](Images/Home.png)
 
-### 🎮 Profile Page 
+###  Profile Page 
 ![Profile Page](Images/Profile.png)
