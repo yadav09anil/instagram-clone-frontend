@@ -1,0 +1,108 @@
+.suggestion-container {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: 'Segoe UI', sans-serif;
+    position: fixed;
+    right: 20px; 
+    top: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+  
+  /* Heading */
+  .suggestion-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Suggestion card layout */
+  .suggestion-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Profile + Name/Username group */
+  .suggestion-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  /* Hover effect on the entire info block */
+.suggestion-info:hover .suggestion-name {
+    font-size: 15px; /* Increase slightly */
+    transition: font-size 0.3s ease;
+  }
+  
+  .suggestion-info:hover .suggestion-username {
+    font-size: 13px; /* Increase slightly */
+    transition: font-size 0.3s ease;
+  }
+  
+  
+  /* Profile picture */
+  .suggestion-pic {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #eee;
+  }
+  
+  /* Text layout to stack name and username */
+  .suggestion-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+  
+  .suggestion-text .suggestion-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+  }
+  
+  .suggestion-text .suggestion-username {
+    font-size: 12px;
+    color: #777;
+    margin-top: 2px;
+  }
+  
+  .suggestion-btn {
+    padding: 6px 12px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .suggestion-btn:hover {
+    background-color: #2c82e0;
+    transform: scale(1.1);
+  }
+  
+  .suggestion-btn.added {
+    background-color: #949494;
+    color: white;
+  }
+  
+  
+  
+  
+  /* Responsive */
+  @media (max-width: 1300px) {
+    .suggestion-container {
+      display: none;
+    }
+  }
+  
+  

@@ -1,0 +1,145 @@
+/* Story bar on top */
+.story-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 250px; 
+  width: calc(70% - 250px); 
+  height: 120px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 15px;
+  z-index: 99;
+  overflow: hidden;
+ 
+  border-radius: 0 0 10px 10px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Scrollable container */
+.story-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  overflow-x: auto;
+  scrollbar-width: none;
+ 
+  width: calc(100% - 40px); 
+}
+
+.story-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Story item */
+.story {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+  
+  /* padding-top: 20px; */
+  color: white;
+}
+
+.story-img-wrapper {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  
+}
+
+.story-img-wrapper img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  /* object-fit: contain; */
+  object-fit: fill;
+}
+
+.story:hover .story-username {
+  font-size: 14px;
+  transform: scale(1.1);
+  
+}
+
+.story-username {
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 600;
+}
+
+.story:hover .story-username {
+  font-size: 14px;
+  
+}
+
+/* Scroll arrow button */
+.scroll-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(104, 102, 102, 0.2);
+  color: #000000;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 250px; 
+  margin-top: 100px;  
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .story-wrapper {
+    left: 200px;
+    width: calc(90% - 200px);
+    height: 100px;
+  }
+
+  .story {
+    min-width: 55px;
+  }
+
+  .story-img-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .story-img-wrapper img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .story-username {
+    font-size: 10px;
+  }
+
+  .story:hover .story-username {
+    font-size: 11px;
+  }
+}

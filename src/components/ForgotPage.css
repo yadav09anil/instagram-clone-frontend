@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e6f0ff, #b3d4ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainbody {
+  background: linear-gradient(135deg, #ffffff, #f0f7ff);
+  width: 360px;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.mainbody:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  margin-bottom: 0px;
+}
+
+.logo img {
+  width: 140px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+.text {
+  margin-bottom: 0px;
+}
+
+.text p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+form > div {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d9e2ff;
+  border-radius: 10px;
+  background-color: #f8fbff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #4A90E2;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.4);
+}
+
+.button button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button button:hover {
+  background: linear-gradient(135deg, #357ABD, #2C5AA0);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+}
+
+.bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.bottom a {
+  color: #4A90E2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.bottom a:hover {
+  text-decoration: underline;
+  color: #2C5AA0;
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+  .mainbody {
+      width: 90%;
+      padding: 30px 20px;
+  }
+
+  .logo img {
+      width: 120px;
+  }
+
+  form {
+      padding: 0 15px;
+  }
+
+  .text p {
+      font-size: 16px;
+  }
+
+  .bottom {
+      font-size: 13px;
+  }
+}
